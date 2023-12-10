@@ -19,8 +19,8 @@ public class Account {
     public boolean equals(Account account){
         return ((this.id==account.id) && (this.balance==account.balance));
     }
-    public int hashCode(Account account){
-        return (int)(101*account.id)/2;
+    public int hashCode(){
+        return (101*account.id);
     }
 
     public Account(int id,int balance,String currency) throws CantCreateAccountException, InvalidCurrencyException {
