@@ -16,6 +16,10 @@ public class Account {
     /*
     Methods from Object in interpretation of Bank scheme
      */
+    /*
+    Методы equals и hashCode обязательно должны быть
+    с одинаковыми параметрами!
+    */
     public boolean equals(Account account){
         return ((this.id==account.id) && (this.balance==account.balance));
     }
